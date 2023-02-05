@@ -1,0 +1,29 @@
+.topBar {
+  height: 8vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lastPart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 1%;
+}
+.secondHeading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 32px;
+  width: 88px;
+  border-radius: 5px;
+  background: rgba(242, 154, 46, 0.1);
+  border-radius: 5px;
+}
+.fifthHeading {
+  font-family: Eudoxus Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1b3f67;
+}
