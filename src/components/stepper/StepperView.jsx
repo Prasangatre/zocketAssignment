@@ -29,12 +29,18 @@ import calendar from "./calendar.png";
 import Slider from "@mui/material/Slider";
 import India from "./India.png";
 import Vector from "./Vector.png";
+import cakeones from "./cakeones.png";
+import caketwos from "./caketwos.png";
+import cakethrees from "./cakethrees.png";
+import cakefours from "./cakefours.png";
+import profileimage from "./profileimage.png";
+import thumb from "./thumb.png";
 
 const steps = [
   "What you want to do",
   "Choose product",
   "Campagin settings",
-  // "Ready to go",
+  "Ready to go",
 ];
 const StepperView = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -71,6 +77,21 @@ const StepperView = () => {
     {
       value: 100,
       label: "30",
+    },
+  ];
+  const FinalStepData = [
+    {
+      cakeImage: cakeones,
+    },
+
+    {
+      cakeImage: caketwos,
+    },
+    {
+      cakeImage: cakethrees,
+    },
+    {
+      cakeImage: cakefours,
     },
   ];
   const Data = [
@@ -409,7 +430,58 @@ const StepperView = () => {
               </div>
             </div>
           ) : (
-            <></>
+            <div className="stepContainerNew">
+              <div className="four">
+                <div className="stepOneHeadingSection">
+                  Ready to go
+                  <span className="steponeSpan">(Step 4 of 4)</span>
+                </div>
+                <div className="fourContent">
+                  {
+                    FinalStepData.map((data)=>    <div className="card">
+                    <div className="topSeCtion">
+                      <div className="imageProfile">
+                        <img src={profileimage} />
+                      </div>
+                      <div className="titleShop">
+                        <div className="mukund">Mukund's Cake Shop</div>
+                        <div className="sponsored">Sponsored</div>
+                      </div>
+                    </div>
+                    <div className="nextSectionm">
+                      We are the best bakery around you. Please like my page to
+                      get updates on exciting offers and discounts
+                    </div>
+                    <div className="cakeImage">
+                      <div style={{width:'75%'}}>  <img
+                        style={{
+                          width: "100%",
+                        }}
+                        src={data.cakeImage}
+                      /></div>
+                    
+                    </div>
+                    <div className="bottomTitle">
+                      <div className="mukund">Mukund Cake Shop</div>
+                      <div className="like">
+                        <div className="likeImage">
+                          <img src={thumb} />
+                        </div>
+                        <div className="likes">Like</div>
+                      </div>
+                    </div>
+                  </div>)
+                  }
+              
+                </div>
+              </div>
+
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <div className="ButtonViewNew">
+                  <div className="buttonText">Create Campagin</div>
+                </div>
+              </div>
+            </div>
           )}
         </div>
       </Box>

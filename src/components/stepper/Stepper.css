@@ -10,6 +10,18 @@
   height: 5vh;
   cursor: pointer;
 }
+.ButtonViewNew {
+  margin-top: 7%;
+  /* margin-right: 5%; */
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 14%;
+  height: 5vh;
+  cursor: pointer;
+}
 .stepperContent {
   display: flex;
   align-items: center;
@@ -20,6 +32,11 @@
   width: 90%;
   background-color: #ffffff;
   height: 45vh;
+}
+.stepContainerNew{
+  width:70vw;
+  background-color: #ffffff;
+  height: 50vh;
 }
 .stepOneHeadingSection {
   font-family: Eudoxus Sans;
@@ -186,4 +203,42 @@
 }
 .fbcIcon {
   padding: 2%;
+}
+.fourContent{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 2%;
+}
+.card{
+  height: 35vh;
+  width: 20vw;
+  background-color: #ffffff;
+}
+.topSeCtion{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.mukund{
+color: #2B23A5;
+}
+.sponsored{
+color: #7676;
+}
+
+.cakeImage{
+margin-top: 1%;
+/* width: 75%; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.bottomTitle{
+  display: flex;
+  justify-content: space-between;
+}
+.like{
+  display: flex;
+  gap: 2px;
 }
